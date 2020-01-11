@@ -23,6 +23,10 @@ textarea {
   margin-bottom: 10px;
 }
 
+.jumbotron {
+  background-color: #fff;
+}
+
 /* タイポグラフィ */
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,18 +60,51 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
+  font-style: italic;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
 }
 
 #logo:hover {
-  color: #fff;
+  color: gray;
   text-decoration: none;
 }
 
+.navbar {
+  font-weight: bold;
+  background-color: blue;
+}
+
+#header {
+  color: #fff;
+  font-weight: bold;
+}
+
+#header:hover {
+  color: gray;
+  font-weight: bold;
+}
+
+#dropdown-title {
+  color: #fff;
+  font-weight: bold;
+  background-color: blue;
+}
+
+#dropdown-title:hover {
+  color: gray;
+  font-weight: bold;
+  background-color: blue;
+}
+
+.dropdown-categoli {
+  color: gray;
+  font-weight: bold;
+  background-color: #DDD;
+}
 /* デバッグウインドウ */
 
 .debug_dump {
@@ -95,4 +132,10 @@ p {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+#table-user{
+  th {
+  text-align: center;
+}  
 }
