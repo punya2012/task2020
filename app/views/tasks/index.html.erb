@@ -22,8 +22,12 @@
             <div class="tasks-index-item">
               
               <tr>
-                <td><%= task.name %></td>
+                <td><%= link_to task.name, user_task_path(@user,task) %></td>
                 <td><%= task.created_at %></td>
+                <td>
+                  <%= link_to "編集", edit_user_task_path(@user,task), class: "btn btn-lg btn-success" %>
+                  <%= link_to"削除", user_task_path(@user,task), method: :delete, data: {confirm: "削除してよろしいですか？" }, class: "btn btn-lg btn-danger" %>
+                </td>
               </tr>
               
             </div>
