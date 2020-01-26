@@ -8,8 +8,7 @@
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
     <%= form_with(model:@task, url:user_tasks_path(@user), local: true) do |f| %>
-      
-      <%= render partial: 'shared/error_messages', locals: { obj: @task } %>
+      <%= render partial: 'shared/task_error_messages', locals: { obj: @task } %>
        
       <%= f.label :"名称", class: "label-form" %>
       <%= f.text_field :name, class: "form-control" %>
